@@ -1,0 +1,149 @@
+
+  .gameWrap{display: none;}
+  /* 整体盒子 */
+  .gameBox {
+    width: 600px;
+    background-color: #5c7494;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+  }
+  .gameBox .left {
+    color: #00ffff;
+    width: 138px;
+    border-radius: 5px;
+    height: 352px;
+    background: url(../images/scene/509.jpg) repeat;
+    padding-left: 50px;
+    line-height: 25px;
+  }
+  .gameBox .left img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+  }
+
+  /* 游戏区 */
+  #gameFrame {
+    background-color: black;
+    width: 352px;
+    height: 352px;
+    position: relative;
+  }
+
+  /* 地图格子 */
+  #gameFrame .gameGrid {
+    width: 32px;
+    height: 32px;
+    float: left;
+  }
+
+  /* 游戏玩家 */
+  #gameFrame .player {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 9;
+  }
+
+  /* 对话框 */
+  #dialog {
+    position: absolute;
+    background: url(../images/box/border_2.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    z-index: 99;
+    width: 250px;
+    height: 100px;
+    padding: 5px;
+    top: 50%;
+    left: 66%;
+    transform: translate(-50%, -100%);
+    display: none;
+  }
+  #dialog .content {
+    font-weight: normal;
+    height: 100%;
+    background-color: #2a3747;
+    border-radius: 5px;
+    position: relative;
+    color: sandybrown;
+    padding: 7px;
+    letter-spacing: 2px;
+  }
+  #dialog .content .hint {
+    width: 100%;
+    text-align: center;
+    bottom: 3px;
+    position: absolute;
+    color: lemonchiffon;
+    transform: scale(0.9);
+  }
+
+  /* 战斗框 */
+  #fight {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 5px;
+    background: url(../images/box/border_1.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 35px 12px 23px 12px;
+    display: none;
+  }
+  #fight .wrap {
+    display: flex;
+    justify-content: space-between;
+    background-image: radial-gradient(#592508, #18211d);
+    height: 100%;
+    border-radius: 10px;
+  }
+  #fight .wrap .info {
+    text-align: center;
+    padding: 20px;
+  }
+  #fight .wrap img {
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  #fight .wrap .info div {
+    text-align: left;
+    color: #00ffff;
+    margin-bottom: 5px;
+  }
+  #fight .player {
+    width: 130px;
+  }
+  #fight .monster {        width: 130px;      }
+  #fight .contentBox {
+    border-left: 1px solid #4e3e3e;
+    border-right: 1px solid #4e3e3e;
+    flex-grow: 1;
+    padding: 15px;
+    padding-bottom: 60px;
+    position: relative;
+    height: 100%;
+    
+  }
+  #fight .contentBox .content {
+    overflow: auto;
+    color: wheat;
+    height: 100%;
+  }
+  #fight .content::-webkit-scrollbar{display: none;}
+
+  #fight .content .playerInfo{color: red; padding-right: 20px;}
+  #fight .content .monsterInfo{color: green; margin-bottom: 10px; padding-left: 20px;text-align: right;}
+  #fight .content .resultInfo{padding: 30px 0 0; color: yellow; text-align: center;}
+  #fight .content .resultInfo h1{font-size: 18px;}
+  #fight .content .resultInfo .hint{margin-top: 20px;     color: lemonchiffon;
+    transform: scale(0.9); position: absolute; width: 100%; left: 0px; bottom: 10px; left: 0px;}

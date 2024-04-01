@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的魔塔</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/story.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+    <script type="module" src="js/mota.js"></script>
+  </head>
+  <body>
 
+    <div class="story">
+      <div class="wrap">
+        <div class="content">
+          <p>这是一个很古老的故事。</p>
+          <p>
+            在很久很久以前，在遥远的西方大地上，有一个王国，王国虽小但全国的人们都生活的幸福快乐。
+          </p>
+          <p>
+            突然有一天，从天空飞来了一群可怕的怪物，它们来到皇宫，抢走了国王唯一的女儿。
+          </p>
+          <p>
+            国外下达的紧急告示并许诺谁能打败怪物，救回公主，就可以和公主结婚并继承王位。
+          </p>
+          <p>
+            许多的勇士、冒险者开始了寻找怪物，拯救公主的旅程，你也带上剑和盾牌，出发。
+          </p>
+          <p>
+            你追寻着怪物的痕迹，跋山涉水，终于这天来到了一座古老高耸的石塔前，你有预感，公主就被关在里面。
+          </p>
+          <p>握紧手中的宝剑，你缓缓推开了那沉重而神秘的塔门...</p>
+        </div>
+        <div class="mask"></div>
+      </div>
+
+      <div id="startPlay" class="btn">开 始</div>
+    </div>
+    <!-- 游戏页面 -->
+    <div class="gameWrap">
+      <div class="gameBox">
+        <!-- 左侧信息栏 -->
+        <div class="left">
+          <div id="level">等级：<span></span></div>
+          <div id="life">生命：<span></span></div>
+          <div id="attack">攻击：<span></span></div>
+          <div id="defense">防御：<span></span></div>
+          <div id="gold">金币：<span></span></div>
+          <div id="exp">经验：<span></span></div>
+          <div id="yelloKey">
+            <img src="./images/treasure/301.jpg" alt="黄钥匙" /><span></span>
+          </div>
+          <div id="blueKey">
+            <img src="./images/treasure/302.jpg" alt="蓝钥匙" /><span></span>
+          </div>
+          <div id="redKey">
+            <img src="./images/treasure/303.jpg" alt="红钥匙" /><span></span>
+          </div>
+          
+        </div>
+
+        <!-- 游戏内容区 -->
+        <div id="gameFrame">
+         
+        </div>
+
+         <!-- 对话框 -->
+         <div id="dialog">
+            <div class="content">
+              <div class="info">对话信息</div>
+              <div class="hint">&gt;&gt;&gt; 按空格键继续 &lt;&lt;&lt;</div>
+            </div>
+          </div>
+
+        <!-- 战斗框 -->
+        <div id="fight">
+          <div class="wrap">
+            <div class="player info">
+              <img src="./images/player/player_2.jpg" alt="" />
+              <div id="level">等级：<span>10</span></div>
+              <div id="life">生命：<span>1000</span></div>
+              <div id="attack">攻击：<span>1000</span></div>
+              <div id="defense">防御：<span>1000</span></div>
+            </div>
+            <div class="contentBox">
+              <div class="content"></div>
+            </div>
+            <div class="monster info">
+              <img src="./images/monster/0.jpg" alt="" />
+              <div id="life">生命：<span>1000</span></div>
+              <div id="attack">攻击：<span>1000</span></div>
+              <div id="defense">防御：<span>1000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+     
+    </style>
+
+    <script></script>
+  </body>
+</html>
